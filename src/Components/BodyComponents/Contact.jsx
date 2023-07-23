@@ -53,7 +53,7 @@ export default function Contact() {
                 smallText: " Contact Me",
                 heading: "Seems To be Interesting",
                 description:
-                  "Got my Portfolio seen , than feel free to contact me for your future projects",
+                  "Got my Portfolio seen ,I am always excited to work on some awesome projects,message me let's discuss over coffee",
               })}
               <br />
               <form onSubmit={handleSubmit}>

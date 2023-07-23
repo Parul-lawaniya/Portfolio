@@ -34,20 +34,21 @@ export default function HeadersComponent() {
         <Typography varinat='h3' component='h4' className={classes.headerTitle}>
           I'm a <span style={{ paddingRight: "5px" }}></span>
           <Typed
-            strings={[" Webdeveloper,", " UI/UX Designer,", " Digital Expert,"]}
+            strings={[" Webdeveloper,", " UI/UX Designer,"]}
             typeSpeed={30}
             backSpeed={50}
             loop
           />
         </Typography>
         <Typography varinat='h3' component='h4' className={classes.headerDesc}>
-          I Create Website And Application,
+          Welcome to my Personal Portfolio...
+          {/* I Create Website And Application, */}
           <br />
-          Based On Your Needs...
+          {/* Based On Your Needs... */}
         </Typography>
 
         {Decorator({
-          label: "About Us",
+          label: "About Me",
           withIcon: true,
           Icon: <ArrowDownwardRoundedIcon />,
         })}

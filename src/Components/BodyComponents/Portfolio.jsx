@@ -2,6 +2,7 @@ import { Box, Button, Container, Grid, Typography } from "@material-ui/core";
 import React from "react";
 import { RenderSectionHeading } from "../common/commonComponent";
 import { useStyles } from "./BodyStyles";
+import "../../../src/Style.css";
 
 import image1 from "../../images/5-2.jpg";
 import image2 from "../../images/5-3.jpg";
@@ -15,12 +16,12 @@ export default function Portfolio() {
   const classes = useStyles();
 
   const portfolioData = [
-    { url: image1, title: "# Portfolio ", link: "" },
-    { url: image2, title: "# Portfolio ", link: "" },
-    { url: image3, title: "# Portfolio ", link: "" },
-    { url: image4, title: "# Portfolio ", link: "" },
-    { url: image5, title: "# Portfolio ", link: "" },
-    { url: image6, title: "# Portfolio ", link: "" },
+    { url: image1, title: "# Portfolio ", link: "https://github.com/Parul-lawaniya/Netflix-clone" },
+    // { url: image2, title: "# Portfolio ", link: "" },
+    // { url: image3, title: "# Portfolio ", link: "" },
+    // { url: image4, title: "# Portfolio ", link: "" },
+    // { url: image5, title: "# Portfolio ", link: "" },
+    // { url: image6, title: "# Portfolio ", link: "" },
   ];
 
   return (
@@ -46,6 +47,7 @@ export default function Portfolio() {
         <Container maxWidth='xl'>
           <Grid container spacing={2}>
             {portfolioData.map((item, i) => (
+              
               <Grid item xs={6} sm={6} lg={4} key={i}>
                 <Box className={classes.imageContainer}>
                   <img
@@ -58,7 +60,8 @@ export default function Portfolio() {
                       {item.title}
                     </Typography>
 
-                    <Button variant='contained'>Visit</Button>
+                    {/* <Button variant='contained'onClick={()=>{item.link}}>Visit</Button> */}
+                    <a class="convert-button" target="_blank" rel="noreferrer" href={item.link}>visit</a>
                   </Box>
                 </Box>
               </Grid>

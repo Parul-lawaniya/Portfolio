@@ -22,8 +22,8 @@ export default function Footer() {
         <ArrowUpwardIcon />
       </IconButton>
       <Typography variant='body1' component='h4' align='center' color='inherit'>
-        Developed and designed with <FavoriteIcon style={{ color: "red" }} /> by
-        GreatCoders , All Right Reserved © {date.getFullYear()}
+        Thankyou for visiting my Portfolio <FavoriteIcon style={{ color: "red" }} /> 
+          {/* {date.getFullYear()} */}
       </Typography>
     </Box>
   );

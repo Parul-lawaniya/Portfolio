@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core";
 import { Theme } from "../Theme";
-import Image from "../../images/brandBanner.jpg";
+import Image from "../../images/Parullavania.jpeg";
 
 export const useStyles = makeStyles((theme) => ({
   HeardeWraper: {

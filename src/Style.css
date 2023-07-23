@@ -1,0 +1,12 @@
+.convert-button {
+    background-color: #199319;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid #199319;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .convert-button:hover {
+    background-color: #568CCE;
+  }
